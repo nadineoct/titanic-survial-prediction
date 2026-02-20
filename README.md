@@ -5,7 +5,6 @@
 ![status](https://img.shields.io/badge/status-completed-green)
 ![project](https://img.shields.io/badge/project-machine--learning-blue)
 
-# Titanic Survival Prediction — Machine Learning Classification
 
 ## Overview
 
@@ -15,8 +14,6 @@ Multiple classification models are compared, including Logistic Regression, K-Ne
 
 This project demonstrates best practices in machine learning pipeline design using scikit-learn.
 
----
-
 ## Objective
 
 The goal of this project is to build a classification model that predicts whether a passenger survived the Titanic disaster based on demographic and travel features.
@@ -25,8 +22,6 @@ This is a binary classification problem:
 
 * 0 → Did not survive
 * 1 → Survived
-
----
 
 ## Dataset Description
 
@@ -51,7 +46,6 @@ Each row represents one passenger.
 | Cabin       | Cabin number                      | Categorical |
 | Embarked    | Port of embarkation (C, Q, S)     | Categorical |
 
----
 
 ## Features Used
 
@@ -68,8 +62,6 @@ Each row represents one passenger.
 * Pclass
 * Embarked
 
----
-
 ## Features Removed
 
 The following features were dropped:
@@ -78,8 +70,6 @@ The following features were dropped:
 * Name → Unstructured text
 * Ticket → Mostly unique values
 * Cabin → Too many missing values
-
----
 
 ## Machine Learning Pipeline
 
@@ -100,8 +90,6 @@ All preprocessing is implemented using:
 * Pipeline
 * ColumnTransformer
 
----
-
 ## Models Implemented
 
 Three classification models were trained and evaluated:
@@ -116,8 +104,6 @@ Advantages:
 * Interpretable
 * Good baseline performance
 
----
-
 ### 2. K-Nearest Neighbors (KNN)
 
 Distance-based classification model.
@@ -127,8 +113,6 @@ Hyperparameter tuning was performed using the elbow method to find the optimal n
 Best parameter:
 
 k = 5
-
----
 
 ### 3. Decision Tree
 
@@ -141,8 +125,6 @@ Pruned Tree (max_depth = 5)
 
 The pruned tree showed better generalization and reduced overfitting.
 
----
-
 ## Model Evaluation Metrics
 
 Models were evaluated using:
@@ -154,8 +136,6 @@ Models were evaluated using:
 * ROC AUC Score
 
 ROC curves were also generated to compare classification performance.
-
----
 
 ## Best Model
 
@@ -171,8 +151,6 @@ Performance:
 
 This model provides the best balance between classification performance and generalization.
 
----
-
 ## Key Insights
 
 From Exploratory Data Analysis:
@@ -181,8 +159,6 @@ From Exploratory Data Analysis:
 * Higher passenger class increased survival probability
 * Passengers with higher fares were more likely to survive
 * Sex and Pclass were the most important predictors
-
----
 
 ## Files Generated
 
@@ -198,8 +174,6 @@ KNN hyperparameter tuning plot
 report.md
 Final analysis and model selection summary
 
----
-
 ## Project Structure
 
 ```
@@ -214,8 +188,6 @@ project/
 └── README.md
 ```
 
----
-
 ## Technologies Used
 
 Python
@@ -227,8 +199,6 @@ Libraries:
 * matplotlib
 * seaborn
 * scikit-learn
-
----
 
 ## How to Run
 
@@ -246,8 +216,6 @@ jupyter notebook
 
 Open the notebook and run all cells.
 
----
-
 ## Machine Learning Concepts Demonstrated
 
 * Exploratory Data Analysis (EDA)
@@ -259,8 +227,6 @@ Open the notebook and run all cells.
 * Model evaluation
 * ROC curve analysis
 * Model comparison
-
----
 
 ## Author
 
